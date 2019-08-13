@@ -10,7 +10,7 @@ This search engine is full text search engine unlike exact value search in DBMS.
 # Inverted Indexing:- 
 An inverted index contains all the unique words that appear in any document and each word, a list of documents in which it appears. Inverted index is a kind of matrix which keeps record of every different word. Matrix also stores about all the documents in which the particular word occurred.
 
-# teXt Pre-ProcessIng:
+# text Pre-Processing:
 1. Tokenization  
 White Space tokenization: Simply through white space. Hyphen, apostrophes are not considered at all.  
 Issue with white space tokenization: “I’m” is one single word but it actually mean “I am”. Similarly a name of a person like “Raja Kumar” should be treated as one word but white space tokenization will count it as two. There are lot many problems with identification of symbols too in white space tokenization.
@@ -18,7 +18,7 @@ Issue with white space tokenization: “I’m” is one single word but it actua
 3.Remove the stop words: Remove words like is, a, and, the etc. They are not important for searching. 
 4.Stemming: To find out the root word.Here I have used Porter stemming algorithm.
  
-# Xml: 
+# XML: 
 XML is extensible that is it allows us to create and use our own tags if server and clients has no problem. Actually XML carries data. It is a public standard.
 Example: 
 <Movie>       
@@ -27,13 +27,13 @@ Example:
   <Rating> 8/10 </Rating> 
 </Movie>
 
-#  saX Parser saX Parser:
+#  SAX Parser :
 It is a package available with java when we download it. We can use it to parse XML documents. It has broadly two parts one is parser and other is handler. Now on the basis of requirement parser will call handler example: StartDocumentHandler(). Handler can be modified according to our use.
  
  Q) Why do I use SAX parser? 
  Answer: Other parser first tries to get entire XML file into main memory and then make a parse tree of it but then Sax parser it read the document in byte by byte fashion. Depending on the byte it will call the appropriate handler.
  
- Working: 
+ # Working: 
  1. We take the Our XML pages as object  
  1) Split the text into tokens 
  2) Remove the stop words 
